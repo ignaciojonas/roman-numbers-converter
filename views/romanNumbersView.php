@@ -1,22 +1,20 @@
 <?php
 class RomanNumbersView
 {
-    private $smarty;
-    private $title;
+    private $_smarty;
+    private $_title;
 
     public function __construct($title)
     {
-        $this->smarty = new Smarty;
-        $this->title = $title;
+        $this->_smarty = new Smarty;
+        $this->_title = $title;
     }
 
     public function show($romanNumber)
     {
-        $this->smarty->assign('title', $title);
-        $this->smarty->assign('romanNumber', $romanNumber);
-        $this->smarty->display('romanNumbers.tpl');
+        $this->_smarty->assign('title', $_title);
+        $this->_smarty->assign('romanNumber', $romanNumber);
+        $this->_smarty->display('romanNumbers.tpl');
     }
 
 }
-
-

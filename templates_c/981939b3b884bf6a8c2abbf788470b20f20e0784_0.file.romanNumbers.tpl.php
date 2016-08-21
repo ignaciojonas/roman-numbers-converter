@@ -3,34 +3,37 @@
   from "/Applications/XAMPP/xamppfiles/htdocs/roman-numbers-converter/templates/romanNumbers.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
-if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.30',
-  'unifunc' => 'content_57b990a6331938_61171202',
-  'has_nocache_code' => false,
-  'file_dependency' => 
-  array (
+if ($_smarty_tpl->_decodeProperties(
+    $_smarty_tpl, array (
+    'version' => '3.1.30',
+    'unifunc' => 'content_57b990a6331938_61171202',
+    'has_nocache_code' => false,
+    'file_dependency' => 
+    array (
     '981939b3b884bf6a8c2abbf788470b20f20e0784' => 
     array (
       0 => '/Applications/XAMPP/xamppfiles/htdocs/roman-numbers-converter/templates/romanNumbers.tpl',
       1 => 1471778979,
       2 => 'file',
     ),
-  ),
-  'includes' => 
-  array (
-  ),
-),false)) {
-function content_57b990a6331938_61171202 (Smarty_Internal_Template $_smarty_tpl) {
-?>
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
-</title>
+    ),
+    'includes' => 
+    array (
+    ),
+    ), false
+)) {
+    function content_57b990a6331938_61171202(Smarty_Internal_Template $_smarty_tpl) 
+    {
+        ?>
+        <!DOCTYPE html>
+        <html>
+          <head>
+        <meta charset="utf-8">
+        <title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+    </title>
       <link href="components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body>
+      </head>
+      <body>
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
@@ -41,7 +44,7 @@ function content_57b990a6331938_61171202 (Smarty_Internal_Template $_smarty_tpl)
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#"><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
-</a>
+    </a>
           </div>
         </div>
       </nav>
@@ -57,20 +60,20 @@ function content_57b990a6331938_61171202 (Smarty_Internal_Template $_smarty_tpl)
             </div>
             <button type="submit" class="btn btn-default">Convert</button>
           </form>
-          <?php if ($_smarty_tpl->tpl_vars['romanNumber']->value) {?>
+            <?php if ($_smarty_tpl->tpl_vars['romanNumber']->value) {?>
           <h1>The roman number converted is: <?php echo $_smarty_tpl->tpl_vars['romanNumber']->value;?>
 </h1>
-          <?php }?>
+            <?php }?>
         </div>
       </div>
 
-      <?php echo '<script'; ?>
- src="components/jquery/jquery.min.js"><?php echo '</script'; ?>
->
-      <?php echo '<script'; ?>
- src="components/bootstrap/js/bootstrap.min.js"><?php echo '</script'; ?>
->
+        <?php echo '<script'; ?>
+     src="components/jquery/jquery.min.js"><?php echo '</script'; ?>
+    >
+        <?php echo '<script'; ?>
+     src="components/bootstrap/js/bootstrap.min.js"><?php echo '</script'; ?>
+    >
     </body>
-  </html>
-<?php }
+      </html>
+    <?php }
 }

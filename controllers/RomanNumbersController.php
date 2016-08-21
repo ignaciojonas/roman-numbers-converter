@@ -1,18 +1,18 @@
 <?php
 class RomanNumbersController
 {
-    private $model;
-    private $view;
+    private $_model;
+    private $_view;
 
     public function __construct()
     {
-        $this->model = new RomanNumbersModel();
-        $this->view = new RomanNumbersView("Roman Number Converter");
+        $this->_model = new RomanNumbersModel();
+        $this->_view = new RomanNumbersView("Roman Number Converter");
     }
 
     public function showPage($number = null)
     {
-        $this->view->show($number);
+        $this->_view->show($number);
     }
 
     public function convertNumber()
@@ -20,11 +20,9 @@ class RomanNumbersController
         $romanNumber=null;
         if (isset($_POST['arabicNumber']) && $_POST['arabicNumber']!='') {
             $arabicNumber = $_POST['arabicNumber'];
-            $romanNumber=$this->model->getRomanNumber($arabicNumber);
+            $romanNumber=$this->_model->getRomanNumber($arabicNumber);
         }
         $this->showPage($romanNumber);
     }
 
 }
-
-
