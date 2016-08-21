@@ -1,7 +1,5 @@
 <?php
-use PHPUnit\Framework\TestCase;
-
-class RomanNumbersModelTests extends TestCase
+class RomanNumbersModelTests extends PHPUnit_Framework_TestCase
 {
     /**
      * @covers Class::Method
