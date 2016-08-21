@@ -1,7 +1,12 @@
 language: php
 php:
-  - '5.6'
-  - '7.0'
+- '5.6'
+- '7.0'
 script: phpunit --bootstrap autoload.php tests/models/RomanNumbersModelTests.php
 deploy:
   provider: heroku
+  api_key:
+    secure: y0MrmP1wmQ0CZICF+MpMPNhif6aV3+Pl4VRHuxs9C0GoacKwifmqxQ4V6tJ9DeHRR/b566O3mDROrY4RVSrFh7xIXhSyi2giUthoxmpqEpkdqJwHuiRj8HkiMT8sVie70+4T2QkHcZQD3HpiGX0sTUO4Yb1h5+3Htjm810Wtkz0GLsR3RClnTg7tbKp98qQeg9zkZWiiPU7cfWwX0JGhIv0HllxjvwCkJkrCGSIvZCrszcaEDWxIUIkSNJo50hc+Aw/g2iSUnA8nEHww9uC1wG/yL/eI9f5YmXrr4QyVzIDJLsZaTuAUevcNb9M5N7zAnqiFdIm086jN9TQmW1n91vgSFNl1Qm/uw/qLEqgXqSg+XT/U2KwH2sDUb85m/2mkiKNqJs6COydjy5rf+OG9zKoPWT97VlI8wi5HqUv/1NpHOm4qL2AbG9EMGeA/L9M84ZuN7a/YPoA8N46P4w2+LsCELm798qYsbSZzfRi5Z2yxhNfwNTC+E1UiwM8QcezrP+emtbtzohAPn1auirHZrSl6nA+UjUZp4Dqv6rbrkA3rdu0m5fol3X/NKZzXpIM3PYtzH+/W31BVrXqxKi/znWFWUrfBFGJaUG+3N6puuCmQbPvRPMcwYtflBndKYI6dwZKFpw+/u0Dw42l7QbihaKQg68W13/Rz4b+zzzBYTbA=
+  app: roman-converter
+  on:
+    repo: ignaciojonas/roman-numbers-converter
