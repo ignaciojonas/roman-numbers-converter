@@ -1,6 +1,4 @@
 <?php
-require('views/RomanNumbersView.php');
-require('models/RomanNumbersModel.php');
 
 class RomanNumbersController
 {
