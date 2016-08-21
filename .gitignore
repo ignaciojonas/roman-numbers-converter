@@ -3,7 +3,6 @@ composer-setup.php
 phpunit.phar
 /lib
 /components
-/templates_c
 
 
 # Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
