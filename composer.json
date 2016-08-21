@@ -3,7 +3,7 @@
         "vendor-dir": "lib/vendor"
     },
     "autoload": {
-         "files": ["../controllers/RomanNumbersController.php","../views/RomanNumbersView.php","../models/RomanNumbersModel.php"]
+         "classmap": ["controllers/","views/","models/","config/"]
     },
     "require": {
         "smarty/smarty": "~3.1",

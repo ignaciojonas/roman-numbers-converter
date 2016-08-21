@@ -1,5 +1,4 @@
 <?php
-
 class RomanNumbersController
 {
   private $model;
