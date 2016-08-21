@@ -8,7 +8,7 @@ class RomanNumbersModelTests extends PHPUnit_Framework_TestCase
     {
         $romanConverter = new RomanNumbersModel();
         $result = $romanConverter->getRomanNumber(1);
-		    $this->assertEquals($result, "I");
+        $this->assertEquals($result, "I");
     }
 
     public function testCovertToRoman2ReturnII()
