@@ -19,7 +19,6 @@ class RomanNumbersController
     if (isset($_POST['arabicNumber']) && $_POST['arabicNumber']!=''){
       $arabicNumber = $_POST['arabicNumber'];
       $romanNumber=$this->model->getRomanNumber($arabicNumber);
-      echo $romanNumber;
     }
     $this->showPage($romanNumber);
   }
