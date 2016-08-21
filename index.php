@@ -1,7 +1,7 @@
 <?php
 include 'lib/vendor/autoload.php';
-include 'config/appConfig.php';
-include 'controllers/RomanNumbersController.php';
+require 'config/appConfig.php';
+require 'controllers/RomanNumbersController.php';
 $controller = new RomanNumbersController();
 
 switch (isset($_GET[AppConfig::$ACTION]) ? $_GET[AppConfig::$ACTION] : null) {
