@@ -3,8 +3,9 @@ php:
 - '5.6'
 - '7.0'
 script:
-- phpunit --bootstrap autoload.php tests/models/RomanNumbersModelTests.php
-- lib/vendor/bin/phpcs . --report=summary --ignore=*/lib/*,*/components/*,*/templates_c/* --standard=Zend -np
+- phpunit -c phpunit.xml.dist
+after_success:
+  - travis_retry php lib/vendor/bin/coveralls
 deploy:
   provider: heroku
   api_key:

@@ -1,9 +1,6 @@
 <?php
 class RomanNumbersModelTests extends PHPUnit_Framework_TestCase
 {
-    /**
-     * @covers Class::Method
-     */
     public function testCovertToRoman1ReturnI()
     {
         $romanConverter = new RomanNumbersModel();
