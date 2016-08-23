@@ -5,6 +5,7 @@ php:
 script:
 - composer install
 - phpunit --configuration phpunit.xml --coverage-clover build/logs/clover.xml
+- php lib/vendor/bin/phpcs . --ignore=*/lib/*,*/components/*,*/templates_c/* --standard=Zend
 after_success:
   - travis_retry php lib/vendor/bin/coveralls -v
 deploy:
