@@ -5,9 +5,7 @@ php:
 script:
 - composer install
 - phpunit --configuration phpunit.xml --coverage-clover build/logs/clover.xml
-- php lib/vendor/bin/phpcs --config-set ignore_errors_on_exit 1
 - php lib/vendor/bin/phpcs . -s --report-file=codesniffer.txt --ignore=*/lib/*,*/components/*,*/templates_c/*,*/build/*
-- cat codesniffer.txt
 after_success:
   - travis_retry php lib/vendor/bin/coveralls -v
 deploy:
