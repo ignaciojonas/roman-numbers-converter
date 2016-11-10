@@ -37,7 +37,7 @@ class RomanNumbersModel
     {
         $return = "";
         if ($arabic == 9) {
-            return "IXI";
+            return "IX";
         }
 
         if ((($arabic % 50) >= 0) && ($arabic >= 50)) {
